@@ -1,0 +1,1682 @@
+/*
+Theme name: マテリアル2
+Author: Nobuo_CREATE
+Author URI: http://wp-material2.net
+Version: 14.1.0
+*/
+
+html,body{height: 100%;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0; padding: 0; border: 0; outline: 0; font-style:normal; font-weight: normal; font-size: 100%; vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+p, h1, h2, h3, h4, h5, h6{word-wrap:break-word; overflow-wrap:break-word;}
+*{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+		box-sizing: border-box;
+}
+
+
+
+body{
+	font-size: 18px;
+	line-height: 1.7;
+	font-family: "メイリオ", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+	color: #333;
+	min-width: 1130px;
+	background: #fff;
+}
+
+
+/****  装飾  ****/
+.red{color: red;}
+.blue{color: blue;}
+.green{color: green;}
+.gray{color: gray;}
+.b, strong{font-weight: bold;}
+.ll{font-size: 1.6em; font-weight: bold;}
+.l{font-size: 1.3em; font-weight: bold;}
+.s{font-size: 0.85em;}
+.ss{font-size: 0.65em;}
+.back-red{background-color: #fcf;}
+.back-blue{background-color:#cff;}
+.back-green{background-color:#cfc;}
+.badge-red,
+.badge-green{
+	font-size: 0.85em;
+	padding: 4px 8px 2px;
+	margin-right: 5px;
+	border-radius: 5px;
+	color: #fff;
+}
+.badge-red{background-color: #e00;}
+.badge-green{background-color: #060;}
+.no_margin{margin-bottom: 5px !important;}
+.waku_red,
+.waku_green{
+	border-radius: 5px;
+	padding: 1.5em 4% 0;
+	margin-bottom: 2em;
+}
+.waku_red{
+	border: 2px solid #c30;
+	background: #fef;
+}
+.waku_green{
+	border: 2px solid #3c0;
+	background: #eff;
+}
+.clear{
+	clear: both;
+	line-height: 0;
+	overflow: hidden;
+}
+.space{
+	clear: both;
+	height: 2.5em;
+}
+
+
+/****  ベーシックレイアウト  ****/
+.header{
+	overflow: hidden;
+}
+.header_inner{
+	width: 85%;
+	max-width: 816px;
+	min-width: 728px;
+	margin: 30px auto 40px;
+	overflow: hidden;
+}
+.main_side{
+	margin:0 auto;
+	overflow: hidden;
+	position: relative;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.main{
+	width: calc(100% - 340px);
+	background: #fff;
+	float: right;
+	padding-bottom: 30px;
+	min-height: 100%;
+}
+.main:before {
+	background-color: #fff;
+	content: "";
+	display: block;
+	width: calc(100% - 340px);
+	height: 100%;
+	min-height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: -1;
+}
+.main_inner{
+	width: 728px;
+	margin: 0 auto 30px;
+}
+.side{
+	width: 340px;
+	float: right;
+	position: relative;
+	z-index: 6;
+}
+.side:before {
+	content: "";
+	display: block;
+	width: 340px;
+	height: 100%;
+	min-height: 100%;
+	position: fixed;
+	z-index: -1;
+}
+.side_inner{
+	width: 300px;
+	position: relative;
+	margin: 30px 20px 0;
+}
+.footer{
+	clear: both;
+	text-align: center;
+	padding: 4px 0 3px;
+	z-index: 7;
+	position: relative;
+}
+.footer p,
+.footer a{
+	font-size: 0.85em;
+	color: #fff;
+	text-decoration: none;
+}
+.box{
+	overflow: hidden;
+}
+
+
+/****  ヘッダー  ****/
+.site_title{
+	font-size: 1em;
+}
+.site_title a{
+	color: #fff;
+	text-decoration: none;
+}
+.site_title{
+	font-size: 1.4em;
+	padding: 40px 20px 30px;
+	text-align: center;
+}
+.site_title a{
+	text-decoration: none;
+}
+.header_img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+.site_desc{
+	font-size: 0.9em;
+	padding: 0 2%;
+	margin-top: -20px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+
+/****  パンくず  ****/
+.bread{
+	margin-bottom: 40px;
+}
+.bread ul{
+	list-style: none;
+	font-size: 0.8em;
+}
+.bread ul .lsf{
+	font-size: 1.2em;
+}
+.bread ul li{
+	color: #777;
+	display: inline-block;
+	margin: 0 10px;
+}
+.bread ul li a{
+	color: #777;
+	text-decoration: none;
+}
+/****  パンくず  ****/
+.bread{
+	font-size: 0.84em;
+	padding: 6px !important;
+	color: #777;
+	margin-bottom: 40px;
+}
+.bread i{
+	margin-right: 2px;
+}
+.bread ul li{
+	display: inline;
+}
+
+.bread a{
+	text-decoration: none;
+	color: #777;
+}
+
+
+/****  indexページ  ****/
+.posts{
+	margin-bottom: 60px;
+}
+.accent_header{
+	clear: both;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.4;
+}
+.archive_title{
+	font-size: 1.2em;
+	padding: 9px 0 8px;
+	margin-bottom: 20px;
+}
+.post{
+	clear: both;
+	overflow: hidden;
+	background: #fff;
+	border-top: 1px solid #eee;
+	box-shadow: 0 2px 3px rgba(100,100,100,0.4);
+	margin-bottom: 30px;
+}
+.thumb_box{
+	width: 138px;
+	min-height: 138px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	background: #ddd;
+}
+.thumb_box img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: auto;
+	height: 100%;
+}
+.thumb_box p{
+	color: #fff;
+	text-align: center;
+	line-height: 1;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.post_info{
+	width: 590px;
+	float: left;
+	padding: 13px 10px 4px 15px;
+}
+.post_info .write_date{
+	color: #777;
+	width: 100px;
+	font-size: 14px;
+	line-height: 1;
+	float: left;
+}
+.post_info .sns_counts{
+	display: inline-block;
+	float: left;
+}
+.post_info .sns_count{
+	margin-right: 14px;
+	font-size: 14px;
+	line-height: 14px;
+	vertical-align: top;
+	float: left;
+}
+.post_info h3{
+	font-size: 1.2em;
+	line-height: 34px;
+	margin: 9px 0 5px;
+}
+.post_info h3 a{
+	color: #333;
+	text-decoration: none;
+}
+.cat_link{
+	display: block;
+	line-height: 24px;
+	text-align: right;
+}
+.cat_folder{
+	font-size: 1.2em;
+	line-height: 18px;
+	color: #ffcc66;
+	vertical-align: middle;
+}
+.cat_link a{
+	display: inline-block;
+	padding: 1px 5px 0px;
+	background-color: #414852;
+	line-height: 18px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 0.7em;
+	border-radius: 2px;
+}
+
+
+/****  ページネーション  ****/
+.pagenavi {
+	clear:both;
+	text-align: center;
+	margin: 10px 0 0;
+
+}
+.pagenavi span,
+.pagenavi a {
+	margin: 0 4px;
+	padding: 7px 8px 5px;
+	text-decoration:none;
+	color:#fff;
+	background: #414852;
+}
+.pagenavi .current{
+	background: #A4D6BF;
+}
+
+
+/****  カテゴリーリスト  ****/
+.cat_lists{
+	margin-top: 50px;
+}
+.cat_lists .cat_list{
+	width: 350px;
+	padding: 10px 0 10px;
+	margin-bottom: 50px;
+}
+.cat_lists .left{
+	clear: both;
+	float: left;
+}
+.cat_lists .right{
+	float: right;
+}
+.cat_list h2{
+	font-size: 1.1em;
+	text-align: left;
+	padding: 4px 0 3px 10px;
+	margin-bottom: 10px;
+}
+.cat_list .post{
+	background: #fff;
+	margin: 0 auto 20px;
+}
+.cat_list .thumb_box{
+	width: 64px;
+	min-height: 64px;
+}
+.cat_list .thumb_box p{
+	font-size: 11px;
+	padding-top: 26.5px;
+	padding-bottom: 26.5px;
+}
+.cat_list .post_info{
+	width: 286px;
+	padding: 5px 2px 2px 5px;
+}
+.cat_list .post_info .write_date{
+	width: 90px;
+}
+.cat_list .post_info .write_date,
+.cat_list .post_info .sns_count{
+	font-size: 11px;
+	line-height: 12px;
+	padding-left: 3px;
+}
+.cat_list .post_info h3{
+	font-size: 0.85em;
+	line-height: 20px;
+	margin: 4px 0 0;
+}
+.cat_list .more{
+	margin-top: -10px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 0.8em;
+	padding: 1px 10px;
+	border-radius: 3px;
+	box-shadow: 0 2px 5px #ccc;
+	float: right;
+}
+
+
+/****  記事ページ  ****/
+.content_header{
+	padding-bottom: 20px;
+}
+.content_header h1{
+	font-size: 1.7em;
+	font-weight: bold;
+	line-height: 1.6;
+	padding: 0 10px 50px;
+}
+.content_header .write_date{
+	font-size: 0.9em;
+	color: #777;
+	text-align: right;
+	line-height: 1.2;
+}
+.content_header .calendar{
+	color: #414852;
+	font-size: 1.3em;
+}
+.content_header .cat_link{
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+.eye_catch{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto 30px;
+}
+.content_body{
+	padding: 20px 30px 40px;
+}
+.content_body p{
+	line-height: 1.8;
+	margin-bottom: 2em;
+}
+.content_body h2,
+.content_body h3,
+.content_body h4,
+.content_body h5,
+.content_body h6{
+	clear: both;
+	line-height: 1.5;
+	font-weight: bold;
+	margin-top: 2em;
+	margin-bottom: 15px;
+}
+.content_body h2:first-of-type{
+	margin-top: 0;
+}
+.content_body h2{
+	font-size: 1.35em;
+	color: #fff;
+	padding: 7px 10px 5px;
+	border-radius: 3px;
+}
+.content_body h3{
+	font-size: 1.3em;
+	padding: 7px 7px 3px;
+}
+.content_body h4{
+	font-size: 1.25em;
+	padding: 2px 7px 1px;
+}
+.content_body h5{
+	font-size: 1.25em;
+	padding: 2px 14px 1px;
+}
+.content_body h6{
+	font-size: 1.2em;
+	padding: 2px 14px 1px;
+}
+.content_body .aligncenter{
+	text-align: center;
+}
+.content_body .alignleft{
+	text-align: left;
+}
+.content_body .alignright{
+	text-align: right;
+}
+.content_body img{
+	max-width: 100%;
+	height: auto;
+}
+.content_body img.aligncenter{
+	display: block;
+	margin: 0 auto 10px;
+	border: 1px solid #ccc;
+}
+.content_body img.alignleft{
+	max-width: 50%;
+	display: block;
+	float: left;
+	margin: 0 10px 10px 0;
+	border: 1px solid #ccc;
+}
+.content_body img.alignright{
+	max-width: 50%;
+	display: block;
+	float: right;
+	margin: 0 0 10px 10px;
+	border: 1px solid #ccc;
+}
+.content_body img.alignnone{
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+}
+.content_body ul,
+.content_body ol{
+	padding-left: 25px;
+	margin-bottom: 2em;
+}
+.content_body li{
+	line-height: 1.5;
+	margin-bottom:0.5em;
+}
+.content_body dl{
+	margin-bottom: 2em;
+}
+.content_body dl dt{
+	font-size: 1.1em;
+	margin-bottom: 0.2em;
+}
+.content_body dl dd{
+	font-size: 0.9em;
+	margin-bottom: 1em;
+	padding-left: 20px;
+}
+.content_body blockquote{
+	width: 90%;
+	margin: 0 auto 2em;
+	font-size: 0.95em;
+	line-height:1.6;
+	background-color: #eef;
+	padding: 2em 5% 1px;
+}
+.content_body blockquote:before{
+	content: "“";
+	color: #999;
+	display: block;
+	font-size: 3em;
+	line-height: 0.3;
+}
+.content_body blockquote p{
+	margin-bottom: 1em;
+}
+.content_body table{
+	border-collapse: collapse;
+	table-layout: fixed;
+	margin: 20px auto 2em;
+	border:1px solid #555;
+}
+.content_body table caption{
+	text-align: center;
+}
+.content_body table th,
+.content_body table td{
+	padding: 5px 10px;
+	border: 1px solid #111;
+}
+.content_body table th{
+	text-align: center;
+	background-color: #bde;
+}
+.content_body th.aligncenter,
+.content_body td.aligncenter{
+	text-align: center;
+}
+.content_body th.alignleft,
+.content_body td.alignleft{
+	text-align: left;
+}
+.content_body th.alignright,
+.content_body td.alignright{
+	text-align: right;
+}
+.content_body .wp-caption{
+	text-align: center;
+	max-width: 100% !important;
+}
+.content_body iframe{
+	max-width: 100%;
+	margin: 0 auto 2em;
+}
+.content_body .page-links{
+	text-align: center;
+}
+.cat_top_link{
+	background: #d0e0ff;
+	text-align: center;
+	padding: 7px 0 5px;
+}
+.previous_and_next{
+	background: #F8FcFF;
+	border-left: 3px solid #d0e0ff;
+	border-bottom: 3px solid #d0e0ff;
+	border-right: 3px solid #d0e0ff;
+	padding: 20px 3%;
+	margin-bottom: 2.5em;
+}
+.previous_link_box,
+.next_link_box{
+	width: 47%;
+}
+.previous_link_box{	
+	float: left;
+}
+.next_link_box{
+	float: right;
+}
+.previous_arrow,
+.next_arrow{
+	font-size: 1.2em;
+	width: 20px;
+}
+.previous_arrow{
+	float: left;
+}
+.next_arrow{
+	float: right;
+}
+.previous_link{
+	margin-left: 20px;
+}
+.next_link{
+	margin-right: 25px;
+	text-align: right;
+}
+
+
+/****  記事直下  ****/
+.under_content h2{
+	font-size: 1.2em;
+	padding: 9px 0 8px;
+	margin-bottom: 20px;
+}
+.under_content .box{
+	clear: both;
+	margin-bottom: 2.5em;
+}
+.textwidget img{
+	max-width: 100%;
+	height: auto;
+}
+
+
+/****  関連記事  ****/
+.kanren{
+	overflow: visible;
+}
+.kanren_posts .post{
+	width: 350px;
+}
+.kanren_posts .left{
+	float: left;
+}
+.kanren_posts .right{
+	clear: none;
+	float: right;
+}
+.kanren .cat_link{
+	text-align: left;
+}
+.tag_link{
+	margin-bottom: 15px;
+}
+.tag_icon{
+	font-size: 1.2em;
+	line-height: 18px;
+	color: #1E90FF;
+	vertical-align: middle;
+}
+
+
+/****  コメント欄  ****/
+#comments input,
+#comments textarea{
+	display: block;
+}
+#comments ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+#comments ul li{
+	max-width: 668px;
+	margin: 10px auto 30px;
+}
+#comments ul li: last-child{
+	margin-bottom: 10px;
+}
+
+#comments .combody{
+	background-color: #EcEcFA;
+	padding: 20px 15px 5px;
+	margin-bottom: 5px;
+}
+.combody p{
+	font-size: 0.9em;
+	margin-bottom: 15px;
+}
+.combody ol{
+	margin-left: 43px;
+}
+#comments p.cominfo{
+	text-align: right;
+	font-size: 0.8em;
+	padding-right: 5px;
+}
+#comments textarea{
+	width: 100%;
+	margin-bottom: 10px;
+}
+#comments .required{
+	color: #ff0000;
+}
+
+#comments p.inputtext label{
+	padding-bottom: 10px;
+}
+.com-nav{
+	margin: -15px 0 30px;
+	overflow: hidden;
+}
+.com-back a,
+.com-next a{
+	display: block;
+	width:130px;
+	font-size: 0.8em;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	background-color: #414852;
+}
+.com-back a{
+	float: left;
+	border-radius: 15px 0 0 15px;
+}
+.com-next a{
+	float: right;
+	border-radius: 0 15px 15px 0;
+}
+.com-nav a{
+	color: #fff;
+	text-decoration: none;
+}
+.comment-reply-title{
+	font-size: 0.9em;
+	margin-bottom: 15px;
+}
+.comment_open{
+	display: inline-block;
+	width: 160px;
+	border-radius: 3px;
+	font-size: 0.9em;
+	color: #fff;
+	background: #414852;
+	text-align: center;
+	padding: 3px 8px 1px;
+	cursor: pointer;
+}
+.input-info{
+	margin-bottom: 10px;
+}
+.comment-form{
+	display: none;
+}
+
+
+/****  記事下プロフィール欄  ****/
+.profile_under_content{
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.main .prof-box{
+	width: 50%;
+	float: left;
+	font-size: 18px;
+}
+.main .follow-box{
+	width: 50%;
+	float: left;
+	padding-left: 10px;
+}
+.profile_under_content h2{
+	text-align: center;
+}
+.profile_under_content .follow-box h2{
+	padding: 5px 0 0;
+	margin-bottom: 0px;
+}
+
+
+/****  メインフッター  ****/
+.main_footer{
+	clear: both;
+	padding: 30px 2%;
+}
+.footer_widget{
+	display: inline-block;
+	vertical-align: top;
+	width: 48%;
+	margin: 0 1% 25px;
+}
+.footer_widget h2{
+	font-weight: bold;
+}
+.footer_widget ul{
+	list-style-type: none;
+}
+.footer_widget a{
+	text-decoration: none;
+}
+.footer_widget ul li{
+	display: inline-block;
+	font-size: 0.85em;
+	margin-right: 15px;
+}
+.footer_widget ul.sub-menu{
+	display: none;
+}
+.footer_widget .textwidget{
+	font-size: 0.7em;
+}
+.footer_widget img{
+	max-width: 96%;
+}
+.copyright{
+	text-align: center;
+	font-size: 0.85em;
+}
+
+
+/****  アーカイブページ  ****/
+.category_desc{
+	margin-bottom: 30px;
+}
+
+
+/****  サイドバー  ****/
+.side .box{
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+.side .box:last-child{
+	margin-bottom: 20px;
+}
+.side h2{
+	clear: both;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.4;
+	padding: 1px 0 2px;
+	margin-bottom: 10px;
+}
+.under_content ul,
+.side ul{
+	list-style-type: none;
+	padding-left: 3%;
+}
+.under_content li,
+.side li{
+	line-height: 1.4;
+	margin-bottom: 13px;
+}
+.side a{
+	text-decoration: none;
+}
+.under_content li ul,
+.side li ul{
+	margin: 10px 0 10px 15px;
+	font-size: 0.95em;
+}
+.side .textwidget{
+	font-size: 0.9em;
+}
+.side .textwidget a{
+	color: darkblue;
+	text-decoration: underline;
+}
+.side .textwidget img{
+	max-width: 100%;
+}
+.recentcomments{
+	font-size: 0.9rem;
+}
+.recentcomments a{
+	font-size: 1.15rem;
+	text-decoration: underline;
+}
+.comment-author-link a{
+	font-size: 0.9rem;
+	text-decoration: none;
+}
+
+
+/****  検索フォーム  ****/
+.search-box{
+	height: 35px;
+}
+.search-text{
+	width: 80%;
+	height: 100%;
+	font-size: 0.9em;
+	float: left;
+	padding: 5px 10px;
+	margin: 0;
+	border: none;
+	box-shadow: 2px 2px 5px #aaa inset;
+	border-radius: 2px 0 0 2px;
+}
+.search-submit{
+	font-size: 1.2em;
+	width:20%;
+	height: 100%;
+	display: inline;
+	padding: 0;
+	margin: 0;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	-webkit-appearance: none;
+	border-radius: 0;
+	background: #414852;
+	border-radius: 0 2px 2px 0;
+}
+
+
+/****  プロフィール欄  ****/
+.side .prof-box{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.image-text{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+img.prof-image{
+	width: 28%;
+	height: auto;
+	float: left;
+	margin: 0 3% 2px 0;
+}
+.prof-name{
+	font-size:1.1em;
+	line-height: 1.2;
+	margin-left: 30%;
+	margin-bottom: 8px;
+	padding: 7px 0 0 5px;
+}
+.prof-text{
+	font-size: 0.85em;
+}
+.prof-text a{
+	color: darkblue !important;
+	text-decoration: underline;
+}
+.twiiter-follow{
+	clear: both;
+	margin: 10px 0;
+}
+.like-box{
+	clear: both;
+	margin-top: 10px;
+}
+
+
+/****  sns  ****/
+.twitter{color: #3589e2 !important;}
+.twitter:hover{background:#3589e2; color:#fff !important;}
+.fb{color: #0559b2 !important;}
+.fb:hover{background:#0559b2; color:#fff !important;}
+.hatebu{color: #1b6fc9 !important;}
+.hatebu:hover{background:#1b6fc9; color:#fff !important;}
+.pocket{color: #EF4056 !important;}
+.pocket:hover{background:#EF4056; color:#fff !important;}
+.line{color: #1DCD00 !important;}
+.line:hover{background:#1DCD00; color:#fff !important;}
+.g-plus{color: #C1350B !important;}
+.g-plus:hover{background:#C1350B; color:#fff !important;}
+.feedly{color: #2E933C !important;}
+.feedly:hover{background:#2E933C; color:#fff !important;}
+
+.share-buttons .pocket span{
+	position: relative;
+	top: -2px;
+}
+
+.main .share-count-button:nth-child(1){
+	border: 1px solid #3589e2;
+}
+.main .share-count-button:nth-child(2){
+	border: 1px solid #0559b2;
+}
+.main .share-count-button:nth-child(3){
+	border: 1px solid #1b6fc9;
+}
+.main .share-count-button:nth-child(4){
+	border: 1px solid #EF4056;
+}
+.main .share-count-button:nth-child(5){
+	border: 1px solid #1DCD00;
+}
+
+
+/****  フォローボタン  ****/
+.follow_buttons{
+	background: #fff;
+}
+.follow-icon{
+	width: 20%;
+	text-align: center;
+	font-size: 2em;
+	line-height: 56px;
+	display: block;
+	float: left;
+}
+.follow_buttons .line{
+	font-size: 2.2em;
+}
+.not{color: #ccc !important;}
+
+
+/****  シェアボタン  ****/
+.share{
+	font-size: 1.3em;
+	padding-left: 10px;
+	border-bottom: 2px solid #59BEC7;
+	margin-bottom: 15px;
+}
+.share-count-button{
+	width: 19.2%;
+	margin-right: 1%;
+	float: left;
+	text-align: center;
+	background: #fff;
+}
+.share-count-button:nth-child(5){
+	margin-right: 0;
+}
+.share-count-button a,
+.share-count-button a:hover{
+	text-decoration: none;
+}
+.share-button{
+	font-size: 1.9em;
+	line-height: 32px;
+	background: #fff;
+}
+.share-buttons .pocket{
+	font-size: 2.1em;
+}
+.share-count{
+	color: #333 !important;
+	background-color: #fff;
+	font-size: 0.8em;
+	line-height: 18px;
+}
+.share-count-button .line{
+	line-height: 50px;
+	font-size: 2.4em;
+}
+
+
+
+/****  カレンダー  ****/
+.calendar_wrap{
+	background: #fff;
+}
+#wp-calendar{
+	width: 100%;
+	text-align: center;
+}
+#wp-calendar caption{
+	padding: 6px 0 3px;
+	margin-bottom: 5px;
+}
+#wp-calendar{
+	color: #333;
+}
+#wp-calendar th{
+	font-weight: bold;
+}
+#wp-calendar a{
+	color: #36c !important;
+	text-decoration: underline;
+}
+#wp-calendar thead th[title="土曜日"]{
+	color: blue;
+}
+#wp-calendar thead th[title="日曜日"]{
+	color: red;
+}
+#wp-calendar tfoot{
+	padding: 3px 0;
+}
+
+
+/****  WordPress Popular Posts  ****/
+.side ul.wpp-list{
+	padding-left: 0;
+}
+.side ul.wpp-list li{
+	font-size: 0.9em;
+	margin-bottom: 20px;
+	position: relative;
+}
+.wpp-list {
+	counter-reset: wpp-ranking;
+}
+.wpp-list li:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	content: counter(wpp-ranking, decimal);
+	counter-increment: wpp-ranking;
+	background: #414852;
+	color: #fff;
+	font-size: 9px;
+	width: 15px;
+	line-height: 15px;
+	text-align: center;
+	padding: 2px 1px 0;
+	border-radius: 50%;
+	box-shadow: 1px 1px 3px #555;
+}
+
+
+/****  フッター  ****/
+.drawer-hamburger{
+	display:none !important;
+}
+
+
+/****  ボタン  ****/
+.move_buttons{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 8;
+}
+.move_buttons p{
+	font-size: 22px;
+	display: inline-block;
+	float: right;
+	padding: 4px 13px 3px;
+	border-radius: 4px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+}
+.to_top{
+	margin-left: 10px;
+	cursor: pointer;
+}
+.to_edit{
+	margin-right: 10px;
+	font-size: 0.8em;
+}
+
+
+/****  アドセンス  ****/
+.ad{
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+.ad_336{
+	width: 336px;
+}
+div.ad p{
+	font-size: 0.75em;
+	color: #666;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.ad_w_rectangle .ad_336:nth-child(1){
+	float: left;
+}
+.ad_w_rectangle .ad_336:nth-child(2){
+	clear: none;
+	float: right;
+}
+
+
+/****  contactform7  ****/
+.wpcf7-form{
+	padding: 20px 4%;
+	background: #F0F8FF;
+	border: 1px solid #a0a8aF;
+	border-radius: 3px;
+	margin-bottom: 2.5em;
+}
+.wpcf7-form p{
+	margin-bottom: 1em;
+}
+.wpcf7-form input{
+	height: 26px;
+	max-width: 100%;
+}
+.wpcf7-form textarea{
+	width: 100%;
+}
+
+
+@media screen and (min-width: 1300px){
+.main:before{
+	width: calc(1300px - 340px);
+}
+}
+
+
+@media screen and (max-width: 1129px){
+body{
+	min-width: 0;
+	position: relative;
+	left: 0;
+	overflow-x: hidden;
+}
+.main{
+	width: 100%;
+	float: none;
+}
+.side{
+	z-index: 9;
+}
+.drawer-hamburger{
+	display: block !important;
+}
+.side{display:none;}//読み込み中はnone
+}
+
+
+@media screen and (max-width: 760px){
+.header_inner{
+	width: 100%;
+	min-width: 0;
+	margin-top: 0;
+}
+.main_inner{
+	width: 92%;
+}
+.thumb_box{
+	width: 20%;
+}
+.post_info{
+	width: 80%;
+}
+.cat_lists .cat_list{
+	width: 48%;
+}
+.cat_list .thumb_box{
+	width: 20%;
+	min-height: 62px;
+}
+.cat_list .thumb_box p{
+	font-size: 10px;
+	line-height: 1;
+	padding-top: 26px;
+	padding-bottom: 26px;
+}
+.cat_list .post_info{
+	width: 80%;
+}
+.cat_list .post_info .write_date{
+	width: 80px;
+}
+.cat_list .post_info .write_date,
+.cat_list .post_info .sns_count{
+	font-size: 10px;
+	line-height: 10px;
+}
+.cat_list .post_info h3{
+	font-size: 0.75em;
+}
+.kanren .post{
+	width: 48%;
+}
+.move_buttons{
+	bottom: 12px;
+	right: 12px;
+}
+.footer{
+	text-align: center;
+}
+}
+
+@media screen and (max-width: 620px){
+body{
+	font-size: 17px;
+}
+.archive_title,
+.under_content h2{
+	padding-top: 5px;
+	padding-bottom: 3px;
+}
+.thumb_box,
+.cat_list .thumb_box{
+	min-height: 116px;
+}
+.cat_list .thumb_box{
+	min-height: 88px;
+}
+.thumb_box p,
+.cat_list .thumb_box p{
+	font-size: 16px;
+	line-height: 1;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.cat_list .thumb_box p{
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+.post_info,
+.cat_list .post_info{
+	padding: 10px 6px 3px 10px;
+}
+.post_info .write_date,
+.cat_list .post_info .write_date{
+	width: 100px;
+}
+.post_info .write_date,
+.post_info .sns_count,
+.cat_list .post_info .write_date,
+.cat_list .post_info .sns_count{
+	font-size: 12px;
+	line-height: 12px;
+}
+.post_info h3,
+.cat_list .post_info h3{
+	font-size: 1.1em;
+	line-height: 28px;
+	margin: 6px 0 4px;
+}
+.cat_list .post_info h3{
+	margin-bottom: 0;
+}
+.cat_folder{
+	font-size: 1.2em;
+	line-height: 18px;
+}
+.cat_link a{
+	padding: 1px 5px 0px;
+	line-height: 18px;
+	font-size: 0.7em;
+}
+.cat_lists .cat_list{
+	width: 100%;
+	float: none;
+}
+.cat_list h2{
+	font-size: 1.4em;
+}
+.cat_list .more{
+	font-size: 1em;
+}
+.content_body table{
+	font-size: 0.9em;
+}
+.content_body table caption{
+	font-size: 1.2em;
+}
+.content_body table th,
+.content_body table.hyou td{
+	padding: 4px 6px;
+}
+.kanren_posts .left,
+.kanren_posts .right{
+	float: none;
+	width: 100%;
+}
+.footer_widget{
+	display: block;
+	width: auto;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+.footer_widget ul li{
+	margin-right: 10px;
+}
+}
+
+
+@media screen and (max-width: 500px){
+.main{
+	padding-bottom: 10px;
+}
+.main_inner{
+	width: 94%;
+}
+.header_inner{
+	margin-bottom: 20px;
+}
+.thumb_box,
+.cat_list .thumb_box{
+	width: 22%;
+	min-height: 102px;
+}
+.cat_list .thumb_box{
+	min-height: 80px;
+}
+.thumb_box p,
+.cat_list .thumb_box p{
+	font-size: 15px;
+	line-height: 1;
+	padding-top: 43px;
+	padding-bottom: 43px;
+}
+.cat_list .thumb_box p{
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+.post_info,
+.cat_list .post_info{
+	width: 78%;
+	padding: 10px 4px 4px 10px;
+}
+.post_info .write_date,
+.cat_list .post_info .write_date{
+	width: 85px;
+}
+.post_info h3,
+.cat_list .post_info h3{
+	font-size: 1em;
+	line-height: 24px;
+	margin: 4px 0 2px;
+}
+.cat_list .post_info h3{
+	margin-bottom: 0;
+}
+.cat_link{
+	line-height: 20px;
+}
+.content_header h1{
+	font-size: 1.5em;
+	padding: 0 0 20px 2%;
+}
+.content_header .write_date{
+	line-height: 1.1;
+}
+.content_body{
+	padding-left: 6%;
+	padding-right: 6%;
+}
+.content_body blockquote{
+	width: 95%;
+}
+.content_body table{
+	font-size: 0.85em;
+}
+.content_body table th,
+.content_body table.hyou td{
+	padding: 3px 4px;
+}
+.main .prof-box,
+.main .follow-box{
+	width: 100%;
+	float: none;
+}
+.main .follow-box{
+	padding-left: 0;
+}
+.profile_under_content .follow-icon{
+	line-height: 44px;
+}
+.side_inner{
+	padding-bottom: 30px;
+}
+.move_buttons{
+	right: 3px;
+	bottom: 5px;
+}
+.move_buttons p{
+	padding: 3px 10px 2px;
+}
+.to_top{
+	margin-left: 9px;
+}
+.footer{
+	font-size: 0.9em;
+	padding: 5px 0 4px;
+}
+.previous_link_box,
+.next_link_box{
+	width: 92%;
+}
+.previous_link_box{
+	margin-bottom: 15px;
+}
+.next_link_box{
+	text-align: right;
+}
+.previous_arrow{
+	float: left;
+}
+.next_arrow{
+	float: right;
+}
+.previous_link{
+	margin-left: 20px;
+}
+.next_link{
+	margin-right: 20px;
+}
+}
+
+@media screen and (max-width: 390px){
+.site_title{
+	font-size: 1.3em;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+.site_desc{
+	font-size: 0.85em;
+	padding: 0 3%;
+}
+.bread{
+	margin-bottom: 20px;
+}
+.thumb_box p,
+.cat_list .thumb_box p{
+	font-size: 12px;
+	padding: 45px 0;
+}
+
+.cat_list .thumb_box p{
+	padding-top: 34px;
+	padding-bottom: 34px;
+}
+.post_info,
+.cat_list .post_info{
+	padding: 10px 4px 4px 7px;
+}
+.post_info h3,
+.cat_list .post_info h3{
+	font-size: 0.95em;
+}
+.cat_list h2{
+	font-size: 1.2em;
+}
+.content_header h1{
+	font-size: 1.35em;
+}
+.content_body{
+	padding-left: 4%;
+	padding-right: 4%;
+}
+.content_body p{
+	font-size: 1em;
+}
+.content_body table{
+	font-size: 0.8em;
+}
+.move_buttons{
+	bottom: 5px;
+}
+}
+
+
+@media screen and (max-width: 340px){
+body{
+	font-size: 16px;
+}
+.content_body{
+	padding-left: 0;
+	padding-right: 0;
+}
+.content_body p{
+	font-size: 0.95em;
+}
+.content_body table{
+	font-size: 0.75em;
+}
+.side:before {
+	width: 320px;
+}
+.side_inner{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.move_buttons p {
+	padding-top: 1px;
+	padding-bottom: 0;
+}
+.footer{
+	font-size: 0.85em;
+}
+}
+
+
+/****  lsf  ****/
+@font-face {
+    font-family: 'LigatureSymbols';
+    src: url('LigatureSymbols/LigatureSymbols-2.11.eot');
+    src: url('LigatureSymbols/LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'),
+         url('LigatureSymbols/LigatureSymbols-2.11.woff') format('woff'),
+         url('LigatureSymbols/LigatureSymbols-2.11.ttf') format('truetype'),
+         url('LigatureSymbols/LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
+    src: url('LigatureSymbols/LigatureSymbols-2.11.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.lsf, .lsf-icon:before {
+  font-family: 'LigatureSymbols';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga" 1, "dlig" 1;
+  -o-font-feature-settings: "liga" 1, "dlig" 1;
+  font-feature-settings: "liga" 1, "dlig" 1;
+	word-wrap: normal;
+	overflow-wrap: normal;
+}
+.lsf-icon:before {
+	content:attr(title);
+	margin-right:0.3em;
+	//font-size:130%;
+	word-wrap: normal;
+	overflow-wrap: normal;
+}
+.lsf-icon.amazon:before {
+  content: '\E007';
+}
+
+/****  icomoon  ****/
+@font-face {
+	font-family: 'icomoon';
+	src:url('./icomoon/icomoon.eot?-mpwpw7');
+	src:url('./icomoon/icomoon.eot?#iefix-mpwpw7') format('embedded-opentype'),
+		url('./icomoon/icomoon.woff?-mpwpw7') format('woff'),
+		url('./icomoon/icomoon.ttf?-mpwpw7') format('truetype'),
+		url('./icomoon/icomoon.svg?-mpwpw7#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	font-size: 0.7em;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-pocket:before {
+	content: "\e600";
+}
